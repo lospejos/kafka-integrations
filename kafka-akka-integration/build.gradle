@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'maven'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+//	{
+//        url = 'http://repo.maven.apache.org/maven2'
+//	}
+}
+
+dependencies {
+    compile 'org.apache.kafka:kafka-clients:2.1.0+'
+    compile 'com.typesafe.akka:akka-actor_2.11:2.5.19+'
+}
+
+//group = 'com.aksain.kafka.integrations'
+//version = '0.0.1-SNAPSHOT'
+
+sourceCompatibility = JavaVersion.VERSION_1_8 //'1.8'
+targetCompatibility = JavaVersion.VERSION_1_8
